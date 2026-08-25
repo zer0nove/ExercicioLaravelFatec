@@ -16,7 +16,7 @@ class execController extends Controller
         $valor1 = $request -> valor1;
         $valor2 = $request -> valor2;
         $soma = $valor1 + $valor2;
-        return view('resultado', compact('soma'));
+        return view('exec1', compact('soma'));
     }
 
     public function abrirFormExec2()
@@ -29,7 +29,7 @@ class execController extends Controller
         $valor1 = $request -> valor1;
         $valor2 = $request -> valor2;
         $subtrai = $valor1 - $valor2;
-        return view('resultado', compact('subtrai'));
+        return view('exec2', compact('subtrai'));
     }
 
     

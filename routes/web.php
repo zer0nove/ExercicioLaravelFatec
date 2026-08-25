@@ -7,13 +7,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ex1', [execController::class, 'abrirFormExec1']
+Route::get('/exec1', [execController::class, 'abrirFormExec1']
 );
-Route::post('/ex1', [execController::class, 'respExec1']
+Route::post('/exec1resp', [execController::class, 'respExec1']
 );
 
-Route::get('/ex2', [execController::class, 'abrirFormExec2']
+Route::get('/exec2', [execController::class, 'abrirFormExec2']
 );
-Route::post('/ex2', [execController::class, 'respExec2']
+Route::post('/exec2resp', [execController::class, 'respExec2']
 );
 

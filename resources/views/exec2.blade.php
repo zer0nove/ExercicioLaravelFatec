@@ -14,6 +14,6 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
         @isset($subtrai)
-            <p>Subtrair: {{ $subtrai }}</p>
+            <p>Resultado: {{ $subtrai }}</p>
         @endisset
 @endsection
