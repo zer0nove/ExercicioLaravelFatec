@@ -1,8 +1,8 @@
 @extends('layout')
-@section('titulo', 'Exercicio 2 - Subtração')
+@section('titulo', 'Exercicio 5 - Média Simples')
 @section('conteudo')
-        <h1>Exercício 2 - Subtração</h1>
-        <form method="post" action="/exec2resp">
+        <h1>Exercício 5 - Média Simples</h1>
+        <form method="post" action="/exec5resp">
             <div class="mb-3">
                 <label for="valor1" class="form-label">Informe o primeiro valor:</label>
                 <input type="number" id="valor1" name="valor1" class="form-control" required="">
@@ -11,9 +11,13 @@
                 <label for="valor2" class="form-label">Informe o segundo valor:</label>
                 <input type="number" id="valor2" name="valor2" class="form-control" required="">
             </div>
+            <div class="mb-3">
+                <label for="valor3" class="form-label">Informe o terceiro valor:</label>
+                <input type="number" id="valor3" name="valor3" class="form-control" required="">
+            </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-        @isset($subtrai)
-            <p>Resultado: {{ $subtrai }}</p>
+        @isset($mediaSimples)
+            <p> Média Simples: {{ $mediaSimples }}</p>
         @endisset
 @endsection
