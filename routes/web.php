@@ -4,7 +4,7 @@ use App\Http\Controllers\execController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/exec1', [execController::class, 'abrirFormExec1']
