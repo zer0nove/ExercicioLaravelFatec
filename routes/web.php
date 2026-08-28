@@ -106,4 +106,3 @@ Route::get('/exec20', [execController::class, 'abrirFormExec20']
 );
 Route::post('/exec20resp', [execController::class, 'respExec20']
 );
-
